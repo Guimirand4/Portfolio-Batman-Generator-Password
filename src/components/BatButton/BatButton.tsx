@@ -1,22 +1,28 @@
-import React from 'react';
-import { Button, View, Text, Pressable } from 'react-native';
+import React, { useState } from 'react';
+import { Text, Pressable } from 'react-native';
 
 import { styles } from './BatButtonStyles';
+import { BatTextInput } from '../BatTextInput/BatTextInput';
+import passwordService from '../../services/passwordService';
 
 export function BatButton() {
+  const [pass, setPass] = useState('');
+
+  function handleGenerateButton() {
+    let password = passwordService();
+    setPass(password);
+  }
   return (
-    <View >
-        <Button onPress={()=> {console.log("ola")}}
-        title='Click Here'
-        accessibilityLabel='Click'>   
-        </Button>
-        <Pressable  onPress={()=> {console.log("pressable")}}style={styles.button}>
+    <>
+          <BatTextInput pass={pass}/>
+        <Pressable  onPress={handleGenerateButton}
+        style={styles.button}>
         <Text style={styles.text}>Generate</Text>
         </Pressable>
-        
+
         <Pressable  onPress={()=> {console.log("pressable")}} style={styles.button}>
         <Text style={styles.text}>Copy</Text>
         </Pressable>
-    </View>
+    </>
   );
 }
