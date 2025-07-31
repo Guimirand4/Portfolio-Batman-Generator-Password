@@ -12,13 +12,13 @@ export default function Home() {
             <View style={styles.LogoContainer}>
                 <BatLogo />
             </View>
-            <View>
+            <View style={styles.inputContainer}>
                 <BatTextInput />
             </View>
             <Text>
 
             </Text>
-            <StatusBar style="auto" />
+            <StatusBar style="light" />
         </View>
     );
 }
