@@ -6,8 +6,6 @@
   <img src="https://img.shields.io/badge/Batman%20Mode-ON-black?style=for-the-badge"/>
 </p>
 
----
-
 ## 🦇 What is Bat-Pass Generator?
 
 A dark-themed, minimal and functional password generator app — inspired by **Batman**.
@@ -18,15 +16,12 @@ Built with **React Native + TypeScript**, it lets you:
 - 📋 **Copy passwords** instantly to your clipboard
 - 🦇 All with a clean Gotham-style interface
 
----
-
 ## ⚙️ Tech Stack
 
 - ⚛️ **React Native** — Cross-platform mobile development
 - 🔷 **TypeScript** — Type-safe code for fewer bugs
 - 📱 **Mobile UI** — Simple and elegant user interface
 
----
 
 ## 🎯 Features
 
@@ -34,15 +29,6 @@ Built with **React Native + TypeScript**, it lets you:
 - 📋 Copy to clipboard button  
 - 🎨 Batman-inspired theme  
 - 🚀 Fast and lightweight  
-
-
-## 🚧 Future Improvements
-
-- 🧠 Password customization (length, chars, symbols)  
-- 🌓 Dark/light theme toggle  
-- ✅ Save password history  
-
----
 
 <p align="center">
   Built in the shadows by <strong>Guilherme Miranda</strong> 🦇
